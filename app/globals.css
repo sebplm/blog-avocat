@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #10243d;
+  --ink: #17191d;
+  --muted: #6f746f;
+  --gold: #a88445;
+  --paper: #f4efe6;
+  --cream: #fbf7ef;
+  --line: #ddd2bf;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+
+  ::selection {
+    background: rgba(168, 132, 69, 0.28);
+  }
+}
+
+@layer components {
+  .section {
+    @apply px-5 py-16 md:py-24;
+  }
+
+  .section-inner {
+    @apply mx-auto max-w-7xl;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.22em];
+    color: var(--gold);
+  }
+
+  .display-title {
+    @apply text-4xl leading-[1.05] md:text-6xl lg:text-7xl;
+  }
+
+  .section-title {
+    @apply text-3xl leading-tight md:text-5xl;
+  }
+
+  .body-large {
+    @apply text-lg leading-8;
+    color: var(--muted);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-none px-6 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-white transition;
+    background: var(--ink);
+  }
+
+  .btn-primary:hover {
+    background: var(--gold);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-none border px-6 py-3 text-sm font-semibold uppercase tracking-[0.12em] transition;
+    border-color: var(--ink);
+    color: var(--ink);
+  }
+
+  .btn-secondary:hover {
+    background: var(--ink);
+    color: white;
+  }
+
+  .article-card {
+    @apply h-full border bg-transparent p-6 transition;
+    border-color: var(--line);
+  }
+
+  .article-card:hover {
+    background: white;
+    border-color: var(--gold);
+    transform: translateY(-2px);
+  }
+
+  .badge {
+    @apply inline-flex border px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em];
+    border-color: rgba(168, 132, 69, 0.35);
+    color: var(--gold);
+  }
+
+  .photo-card {
+    @apply overflow-hidden;
+  }
+
+  .cta-panel {
+    @apply border px-6 py-10 md:px-10 md:py-12;
+    background: var(--ink);
+    border-color: var(--ink);
+    color: white;
+  }
+
+  .prose-article {
+    @apply text-[17px] leading-8;
+    color: #454a45;
+  }
+
+  .prose-article h2 {
+    @apply mt-12 border-b pb-4 text-3xl leading-tight md:text-4xl;
+    border-color: var(--line);
+  }
+
+  .prose-article h3 {
+    @apply mt-9 text-2xl;
+  }
+
+  .prose-article p {
+    @apply mt-5;
+  }
+
+  .prose-article ul {
+    @apply mt-5 list-disc space-y-2 pl-6;
+  }
+
+  .prose-article li {
+    @apply pl-1;
+  }
+
+  .prose-article strong {
+    color: var(--ink);
+  }
+
+  .prose-article a {
+    @apply font-semibold underline underline-offset-4;
+    color: var(--ink);
+    text-decoration-color: var(--gold);
+  }
+
+  .prose-article .cta-block {
+    @apply my-12 border p-8 text-white;
+    background: var(--ink);
+    border-color: var(--ink);
+  }
+
+  .prose-article .cta-block h3 {
+    @apply mt-0 text-2xl text-white;
+  }
+
+  .prose-article .cta-block p {
+    @apply text-stone-200;
+  }
+
+  .prose-article .cta-block a {
+    @apply mt-5 inline-flex bg-white px-5 py-3 text-sm font-semibold uppercase tracking-[0.12em] no-underline;
+    color: var(--ink);
+  }
+}
