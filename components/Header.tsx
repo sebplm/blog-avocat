@@ -8,6 +8,7 @@ const nav = [
   { label: 'Accidents de la route', href: '/avocat-accident-route-toulouse' },
   { label: 'Accidents médicaux', href: '/avocat-erreur-medicale-toulouse' },
   { label: 'Agressions', href: '/avocat-agression-toulouse' },
+  { label: 'Trouver votre avocat', href: '/trouver-votre-avocat' },
   { label: 'Guides', href: '/blog' },
   { label: 'Contact', href: '/contactez-meilleur-avocat-toulouse' },
 ];
