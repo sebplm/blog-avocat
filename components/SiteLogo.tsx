@@ -7,9 +7,18 @@ type SiteLogoProps = {
 export default function SiteLogo({ compact = false }: SiteLogoProps) {
   return (
     <span className="inline-flex items-center gap-3 leading-none">
-      <span className="relative grid h-12 w-12 place-items-center border border-[var(--ink)] bg-[var(--ink)] text-white">
-        <span className="absolute inset-1 border border-[var(--gold)]" />
-        <span className="font-serif text-lg tracking-0">AA</span>
+      <span
+        className="relative grid h-12 w-12 place-items-center border border-[var(--ink)] bg-[var(--cream)]"
+        aria-hidden="true"
+      >
+        <span className="absolute left-2 right-2 top-2 h-0 border-x-[14px] border-b-[9px] border-x-transparent border-b-[var(--ink)]" />
+        <span className="absolute left-2 right-2 top-[19px] h-[2px] bg-[var(--gold)]" />
+        <span className="absolute bottom-[13px] left-[11px] h-[12px] w-[3px] bg-[var(--ink)]" />
+        <span className="absolute bottom-[13px] left-[18px] h-[12px] w-[3px] bg-[var(--ink)]" />
+        <span className="absolute bottom-[13px] left-[25px] h-[12px] w-[3px] bg-[var(--ink)]" />
+        <span className="absolute bottom-[13px] left-[32px] h-[12px] w-[3px] bg-[var(--ink)]" />
+        <span className="absolute bottom-2 left-2 right-2 h-[3px] bg-[var(--ink)]" />
+        <span className="absolute bottom-[5px] left-[7px] right-[7px] h-[1px] bg-[var(--gold)]" />
       </span>
       <span>
         <span className="block font-serif text-2xl text-[var(--ink)] md:text-3xl">{SITE.name}</span>

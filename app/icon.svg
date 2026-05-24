@@ -1,5 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" fill="#17191d"/>
-  <rect x="7" y="7" width="50" height="50" fill="none" stroke="#a88445" stroke-width="2"/>
-  <text x="32" y="39" text-anchor="middle" fill="#fbf7ef" font-family="Georgia, Times New Roman, serif" font-size="22">AA</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Actu Avocat Toulouse">
+  <rect width="64" height="64" fill="#fbf7ef"/>
+  <rect x="6" y="6" width="52" height="52" fill="none" stroke="#17191d" stroke-width="2"/>
+  <path d="M32 13 16 24h32L32 13Z" fill="#17191d"/>
+  <rect x="16" y="27" width="32" height="3" fill="#a88445"/>
+  <rect x="19" y="31" width="4" height="15" fill="#17191d"/>
+  <rect x="27" y="31" width="4" height="15" fill="#17191d"/>
+  <rect x="35" y="31" width="4" height="15" fill="#17191d"/>
+  <rect x="43" y="31" width="4" height="15" fill="#17191d"/>
+  <rect x="15" y="47" width="34" height="4" fill="#17191d"/>
+  <rect x="12" y="53" width="40" height="2" fill="#a88445"/>
 </svg>
