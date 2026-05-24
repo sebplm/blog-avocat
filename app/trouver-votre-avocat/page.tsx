@@ -42,17 +42,36 @@ export default function FindLawyerPage() {
           <div className="border border-[var(--line)] bg-[var(--cream)] p-6">
             <p className="eyebrow">Source officielle</p>
             <p className="mt-4 leading-8 text-stone-600">
-              Pour une recherche exhaustive, consultez aussi l'annuaire officiel du Barreau de Toulouse.
-              La base ci-dessous est éditoriale et orientée dommage corporel.
+              Pour une recherche exhaustive, consultez aussi l'annuaire officiel du Barreau de Toulouse,
+              l'annuaire national du Conseil national des barreaux et le jeu de données public data.gouv.
+              La base ci-dessous reste éditoriale et orientée dommage corporel.
             </p>
-            <a
-              href="https://www.avocats-toulouse.com/annuaire"
-              target="_blank"
-              rel="noopener"
-              className="btn-secondary mt-6"
-            >
-              Annuaire du Barreau
-            </a>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a
+                href="https://www.avocats-toulouse.com/annuaire"
+                target="_blank"
+                rel="noopener"
+                className="btn-secondary"
+              >
+                Barreau Toulouse
+              </a>
+              <a
+                href="https://www.cnb.avocat.fr/fr/annuaire-des-avocats-de-france"
+                target="_blank"
+                rel="noopener"
+                className="btn-secondary"
+              >
+                Annuaire CNB
+              </a>
+              <a
+                href="https://www.data.gouv.fr/fr/datasets/annuaire-des-avocats-de-france/"
+                target="_blank"
+                rel="noopener"
+                className="btn-secondary"
+              >
+                Data.gouv
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -72,8 +91,8 @@ export default function FindLawyerPage() {
           <div className="space-y-5 leading-8 text-stone-600">
             <p>
               Les profils sont ajoutés à partir de sources publiques : sites officiels de cabinets, annuaire du Barreau
-              de Toulouse et plateformes d'annuaire juridique. Les informations peuvent évoluer ; la source de chaque
-              fiche est donc indiquée pour vérification.
+              de Toulouse, annuaire national du CNB, jeu de données data.gouv et plateformes d'annuaire juridique.
+              Les informations peuvent évoluer ; la source de chaque fiche est donc indiquée pour vérification.
             </p>
             <p>
               Le classement n'est pas un classement ordinal. Le cabinet NA Avocats est volontairement mis en avant,
