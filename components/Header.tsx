@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import SiteLogo from '@/components/SiteLogo';
 import { SITE } from '@/lib/site';
 
 const nav = [
@@ -10,7 +11,7 @@ const nav = [
   { label: 'Agressions', href: '/avocat-agression-toulouse' },
   { label: 'Trouver votre avocat', href: '/trouver-votre-avocat' },
   { label: 'Guides', href: '/blog' },
-  { label: 'Contact', href: '/contactez-meilleur-avocat-toulouse' },
+  { label: 'Contact', href: '/contactez-avocat-toulouse' },
 ];
 
 export default function Header() {
@@ -20,10 +21,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-[var(--line)] bg-[var(--cream)]/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5">
         <Link href="/" className="leading-none" onClick={() => setOpen(false)}>
-          <span className="block font-serif text-2xl text-[var(--ink)]">{SITE.name}</span>
-          <span className="mt-1 block text-[11px] font-semibold uppercase tracking-[0.2em] text-[var(--gold)]">
-            Dommage corporel Toulouse
-          </span>
+          <SiteLogo compact />
         </Link>
 
         <nav className="hidden items-center gap-7 lg:flex">

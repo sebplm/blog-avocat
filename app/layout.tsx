@@ -7,8 +7,8 @@ import { SITE } from '@/lib/site';
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: 'Meilleur Avocat Toulouse - Dommage Corporel et Indemnisation',
-    template: '%s | Meilleur Avocat Toulouse',
+    default: `${SITE.name} - Dommage corporel et indemnisation`,
+    template: `%s | ${SITE.name}`,
   },
   description: SITE.description,
   keywords: [

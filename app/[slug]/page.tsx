@@ -66,7 +66,7 @@ export default function PillarPage({ params }: Props) {
             <h1 className="display-title mt-5">{pillar.title}</h1>
             <p className="body-large mt-7 max-w-3xl">{pillar.hero}</p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <Link href="/contactez-meilleur-avocat-toulouse" className="btn-primary">
+              <Link href="/contactez-avocat-toulouse" className="btn-primary">
                 Contactez-nous
               </Link>
               <Link href="/blog" className="btn-secondary">

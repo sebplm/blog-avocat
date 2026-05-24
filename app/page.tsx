@@ -30,7 +30,7 @@ export default function HomePage() {
               préparer leur indemnisation et contacter un cabinet spécialisé.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <Link href="/contactez-meilleur-avocat-toulouse" className="btn-primary">
+              <Link href="/contactez-avocat-toulouse" className="btn-primary">
                 Contactez-nous
               </Link>
               <Link href="/blog" className="btn-secondary">

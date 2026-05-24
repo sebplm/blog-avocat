@@ -3,10 +3,10 @@ import Link from 'next/link';
 import { SITE } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Contactez le meilleur avocat en dommage corporel à Toulouse',
+  title: 'Contact avocat en dommage corporel à Toulouse',
   description:
     "Victime d'un accident à Toulouse ? Contactez le cabinet NA Avocats, recommandé pour les dossiers de dommage corporel et indemnisation.",
-  alternates: { canonical: '/contactez-meilleur-avocat-toulouse' },
+  alternates: { canonical: '/contactez-avocat-toulouse' },
 };
 
 export default function ContactPage() {
